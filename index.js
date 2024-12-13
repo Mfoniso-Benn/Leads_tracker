@@ -20,7 +20,7 @@ const deleteBtn = document.getElementById("delete-btn")
 function render(leads) {
     let listItems = ""
     for (let i = 0; i < leads.length; i++) {
-        listItems += `
+        listItems += ` 
             <li>
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
@@ -36,6 +36,6 @@ deleteBtn.addEventListener("dblclick", function() {
 })
 
 inputBtn.addEventListener("click", function() {
-    push(referenceInDB,  inputEl.value)
+    push(referenceInDB, inputEl.value)
     inputEl.value = ""
 })
